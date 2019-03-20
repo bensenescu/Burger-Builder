@@ -1,11 +1,11 @@
 import React from 'react';
 
 import classes from './Modal.css';
-import Aux from '../../../hoc/Aux'
+import Auxillary from '../../../hoc/Auxillary'
 import Backdop from '../Backdrop/Backdrop';
 
 const modal = (props) => (
-    <Aux>
+    <Auxillary>
         <Backdop show={props.show} clicked={props.modalClosed} />
         <div className={classes.Modal}
             style={{
@@ -14,7 +14,7 @@ const modal = (props) => (
             }}>
             {props.children}
         </div>
-    </Aux>
+    </Auxillary>
 
 )
 
